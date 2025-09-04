@@ -2,20 +2,18 @@
   "name": "music-interpreter-pattern",
   "version": "1.0.0",
   "description": "TypeScript implementation of Interpreter Design Pattern using musical notation",
-  "main": "InteractiveDemo.js",
+  "main": "src/interactiveDemo.js",
   "scripts": {
-    "build": "tsc *.ts --target es2017 --module commonjs",
-    "start": "tsc InteractiveDemo.ts --target es2017 --module commonjs && node InteractiveDemo.js",
-    "demo": "npm run start"
+    "build": "tsc",
+    "start": "npm run build && node dist/interactiveDemo.js",
+    "clean": "rm -rf dist"
   },
   "keywords": [
     "design-patterns",
     "interpreter-pattern",
     "typescript",
-    "music",
-    "behavioral-patterns"
+    "music"
   ],
-  "author": "Your Name",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.0.0",
